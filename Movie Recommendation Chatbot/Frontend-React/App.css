@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif; /* Stylish font for consistency */
+  background-color: #000; /* Black background to match chatbot */
+  color: white; /* Default text color */
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: fixed; /* Change to fixed to ensure it stays at the top */
+  top: 10px; /* Adjust distance from the top of the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; /* Optional for text alignment */
+  color: white; /* Ensure visibility on black background */
+  z-index: 1000; /* Make sure it appears above other elements */
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Smooth Scroll for Scrollable Elements */
+.scrollable {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1a1a1a;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
+
+.chatbot-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Center chatbot vertically */
+  padding: 2rem;
+  background: black; /* Matches global background */
+}
